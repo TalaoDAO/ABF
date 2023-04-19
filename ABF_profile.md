@@ -88,9 +88,11 @@ A complete description of this method is available  [here](https://w3c-ccg.githu
 The 'did:key' method used by EBSI is based on a specific [multicodec](https://github.com/multiformats/multicodec/blob/master/table.csv#L514). A complete description of this method is available [here](https://api-pilot.ebsi.eu/docs/libraries/ebsi-did-resolver). 
 
 ### Legal Entities
-Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core) , MUST be used as identifiers of legal entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as mandatory DID methods as defined in [did-web](https://w3c-ccg.github.io/did-method-web/),  [did-ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
+Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core) , MUST be used as identifiers of legal entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as mandatory DID methods as defined in [did:web](https://w3c-ccg.github.io/did-method-web/),  [did:ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
 
-Expliquer comment resoudre ces DIDs
+x509 certificate are not supported.
+
+Expliquer comment resoudre ces DIDs (DID resolver, ...)
 
 ### keys
 Supporeted digital signature :
@@ -102,14 +104,12 @@ ECDSA
 * secp256k1 ES256K        Optional
 
 EdDSA
-* Ed25519d OKP     Optional
+* Ed25519 OKP     Optional
 
 RSA	
 * PKCS1-v1_5 RS256        Optional.
 
-For interoperability, the implementation of the P-256 curve is required.
-
-x509 certificate use ?
+The implementation of the P-256 curve is required.
 
 
 
