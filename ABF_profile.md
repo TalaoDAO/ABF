@@ -94,7 +94,7 @@ X509 certificate are not supported.
 
 Expliquer comment resoudre ces DIDs (DID resolver, ...)
 
-### keys
+### Cryptographic Keys
 Supporeted digital signature :
 
 ECDSA	
