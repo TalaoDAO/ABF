@@ -23,6 +23,7 @@ This document is not a specification, but a profile. It outlines existing specif
 - [Decentralized Identifiers](#decentralized-identifiers-did)  
         * [Natural Persons](#natural-persons)   
         * [Legal Entities](legal-entities)  
+        * [Cryptographic Keys and Signatures](#cryptographic-keys-and-signatures)
 - [Verifiable Credentials](#verifiable-credentials)
 - [Protocols](#protocols)
 - [Wallet](#wallet)
@@ -94,8 +95,9 @@ X509 certificate are not supported.
 
 Expliquer comment resoudre ces DIDs (DID resolver, ...)
 
-### Cryptographic Keys
-Supporeted digital signature :
+### Cryptographic Keys and Signatures
+
+Supported digital signature are JWS as defined in [RFC715](https://datatracker.ietf.org/doc/html/rfc7515). JSON Web Signature (JWS) represents content secured with digital signatures using JSON-based data structure (JWT).
 
 ECDSA	
 * P-256 ES256 	Required
