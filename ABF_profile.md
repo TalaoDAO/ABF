@@ -43,7 +43,7 @@ A user of an ABF member goes to a service that offers the issuance of a loyalty 
 
 VCs MUST adhere to the [VC Data Model v1.1](https://www.w3.org/TR/vc-data-model/) and be encoded as JSON and signed as JWT as defined in 6.3.1 of VC Data Model v1.1. VCs encoded as JSON-LD and signed using Linked Data Proofs are NOT supported.
     
-For key management and authentication, Self-Issued OpenID Connect Provider v2, an extension to OpenID Connect, MUST be used as defined in [SIOPv2 ID1](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html).
+For key management and authentication, Self-Issued OpenID Connect Provider v2, an extension to OpenID Connect, MUST be used as defined in [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html).
 
 For transportation of VCs, First Implementer’s Draft of OpenID for Verifiable Presentations MUST be used as defined in [OpenID4VP](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html).
 
@@ -57,7 +57,7 @@ Verification Material intended for use in the profile MUST use [publicKeyJwk](ht
 
 To bind an owner of a DID to a controller of a certain origin, a Well Known DID Configuration MUST be used as defined in [Well Known DID](https://identity.foundation/.well-known/resources/did-configuration/).
 
-For Revocation of VCs, Status List 2021 as defined in [Status List 2021](https://w3c.github.io/vc-status-list-2021/) MUST be discovered using either DID Relative URLs stored in an Identity Hub as defined in Identity Hub (0.0.1 Predraft) or discovered using an HTTPS URL.
+For Revocation of VCs, Status List 2021 as defined in [Status List 2021](https://w3c.github.io/vc-status-list-2021/) MUST be discovered using an HTTPS URL.
 
 
 ## Decentralized identifiers (DID)
