@@ -93,7 +93,7 @@ Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foun
 
 X509 certificate are not supported.
 
-Expliquer comment resoudre ces DIDs (DID resolver, ...)
+Implementers will find several libs to resolve those DIDs locally in issuer, verififers and wallets and the [Universal Resolver](https://dev.uniresolver.io/) maybe used as an simple but centralized almlternative solution.
 
 ### Cryptographic Keys and Signatures
 
