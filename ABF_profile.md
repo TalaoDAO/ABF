@@ -91,8 +91,7 @@ The 'did:key' method used by EBSI is based on a specific [multicodec](https://gi
 ### Legal Entities
 Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core) , MUST be used as identifiers of legal entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as mandatory DID methods as defined in [did:web](https://w3c-ccg.github.io/did-method-web/),  [did:ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi](https://ec.europa.eu/digital-building-blocks/wikis/display/EBSIDOC/EBSI+DID+Method#EBSIDIDMethod-DIDDocumentforEBSIDIDLE).
 
-DID method for Alatria is available [here](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification)
-DID method for EBSI legal entities is avalailbe [here](
+Each memeber is responsible for its own registration with EBSI or ALASTRIA ecosystem.
 
 X509 certificate are not supported.
 
