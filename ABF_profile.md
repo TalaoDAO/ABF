@@ -93,7 +93,9 @@ Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foun
 
 Each memeber is responsible for its own registration with EBSI or ALASTRIA ecosystem.
 
-X509 certificate are not supported.
+For companies that do not have their own decentralized identifiers, a quick and simple method is possible through the did:web method. The target system of the Web DID method is the domain name when the domain specified by the DID is resolved through the Domain Name System (DNS). Thankd to that method onen ca setup a DID for a company in less than one hour with a text editor an a server access to the root of the domain. Example of a did-web DID Document for [did:web:talao.co](https://dev.uniresolver.io/1.0/identifiers/did:web:talao.co).  
+
+X509 certificates are NOT supported.
 
 Implementers will find several libs to resolve those DIDs locally in issuer, verififers and wallets and the [Universal Resolver](https://dev.uniresolver.io/) maybe used as an simple but centralized almlternative solution.
 
@@ -116,7 +118,6 @@ RSA
 The implementation of the P-256 curve is required.
 
 
-
 ## Verifiable Credentials 
 
 ### General topics
@@ -133,11 +134,8 @@ Absolute DID URL are used as a kid, DID value in a kid without a DID fragment MU
 
 DID fragment in a 'kid' identifies which key material in a DID Document to use to validate the signature on a VC/VP/ID Token.
 
-
-* Format serialization : JWT
-* Atomic credentials or data minimization
-* Localization UK
-* holder binding ? 
+### Bearer credentials
+Verifiable credentials that are bearer credentials are made possible by not specifying the subject identifier, expressed using the id property (and sub claim in teh JWT forùmat), which is nested in the credentialSubject property. 
 
 
 ## Protocols
