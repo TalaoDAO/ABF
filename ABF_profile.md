@@ -89,7 +89,10 @@ A complete description of this method is available  [here](https://w3c-ccg.githu
 The 'did:key' method used by EBSI is based on a specific [multicodec](https://github.com/multiformats/multicodec/blob/master/table.csv#L514). A complete description of this method is available [here](https://api-pilot.ebsi.eu/docs/libraries/ebsi-did-resolver). 
 
 ### Legal Entities
-Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core) , MUST be used as identifiers of legal entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as mandatory DID methods as defined in [did:web](https://w3c-ccg.github.io/did-method-web/),  [did:ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
+Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core) , MUST be used as identifiers of legal entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as mandatory DID methods as defined in [did:web](https://w3c-ccg.github.io/did-method-web/),  [did:ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi](https://ec.europa.eu/digital-building-blocks/wikis/display/EBSIDOC/EBSI+DID+Method#EBSIDIDMethod-DIDDocumentforEBSIDIDLE).
+
+DID method for Alatria is available [here](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification)
+DID method for EBSI legal entities is avalailbe [here](
 
 X509 certificate are not supported.
 
@@ -117,7 +120,7 @@ The implementation of the P-256 curve is required.
 
 ## Verifiable Credentials 
 
-### Gneeral topics
+### General topics
 VC Data Model v1.1 provides two options for how to encode properties defined in VC Data Model v1.1 as a JWT:  
 
 * Use registered JWT claims instead of respective counterparts defined in a VC Data Model v1.1.
@@ -156,6 +159,9 @@ DID fragment in a 'kid' identifies which key material in a DID Document to use t
 
 ## Wallet 
 * key management -> import/export
+Cf https://github.com/alastria/alastria-identity/wiki/Backup-and-recovery-standards qui semble avoir quelques bonnes idées.  
+AUtre source DIF wg wallet security https://identity.foundation/working-groups/wallet-security.html  
+
 * data(VC) management -> import/export 
 * No mobile wallet onboarding  
 * user binding requirement -> authentication mode to be defined
@@ -207,7 +213,7 @@ Profile examples  :
 * https://api-pilot.ebsi.eu/docs  
 * https://github.com/alastria/alastria-identity   
 
-
+SSI eIDAS : https://joinup.ec.europa.eu/sites/default/files/document/2020-04/SSI_eIDAS_legal_report_final_0.pdf  
 EU ARF : https://github.com/eu-digital-identity-wallet  
 W3C DID core : https://www.w3.org/TR/did-core/  
 W3C VC/VP : https://www.w3.org/TR/vc-data-model/  
