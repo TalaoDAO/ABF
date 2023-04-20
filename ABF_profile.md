@@ -135,7 +135,19 @@ Absolute DID URL are used as a kid, DID value in a kid without a DID fragment MU
 DID fragment in a 'kid' identifies which key material in a DID Document to use to validate the signature on a VC/VP/ID Token.
 
 ### Bearer credentials
-Verifiable credentials that are bearer credentials are made possible by not specifying the subject identifier, expressed using the id property (and sub claim in teh JWT forùmat), which is nested in the credentialSubject property. 
+Verifiable credentials that are bearer credentials are made possible by not specifying the subject identifier, expressed using the id property (and sub claim in the JWT format), which is nested in the credentialSubject property. 
+
+### Credential header
+
+The header part has three mandatory fields:
+
+* "typ" which is the type of the format (always "JWT")
+
+* "alg" which is the signature scheme employed ('ES256K', 'RS256', 'secp256k1',... ). A list of defined "alg" values can be found in the [RFC7518](https://www.rfc-editor.org/rfc/rfc7518#page-6).
+
+* "kid" which is the id of the public key. This parameter indicates which key was used to secure (digitally sign) the JWT. In Alastria, the value of the “kid” is the DID reference of the public key as it appears in the DID Document associated to the issuer of the Credential (or wallet for presentation). So it always should follow the pattern: did + "#" + key alias
+
+Alastria compliance : only P-256 ES256K supported (To be verified)
 
 
 ## Protocols
