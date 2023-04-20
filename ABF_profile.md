@@ -117,6 +117,19 @@ The implementation of the P-256 curve is required.
 
 ## Verifiable Credentials 
 
+### Gneeral topics
+VC Data Model v1.1 provides two options for how to encode properties defined in VC Data Model v1.1 as a JWT:  
+
+* Use registered JWT claims instead of respective counterparts defined in a VC Data Model v1.1.
+* Use JWT claims in addition to VC Data Model v1.1 counterparts
+
+Registered JWT claims 'exp', 'iss', 'nbf', 'jti', 'sub' and 'aud' MUST be used in a JWT VC. If their counterpart in VC data model exist they will not be taken into account.
+
+Verifiable Credentials included in a JWT-encoded Verifiable Presentation MUST be Base64url encoded.
+
+Absolute DID URL are used as a kid, DID value in a kid without a DID fragment MUST exactly match a DID included in a 'iss' if it is a VC or a VP and 'sub' if it is an ID Token.
+
+DID fragment in a 'kid' identifies which key material in a DID Document to use to validate the signature on a VC/VP/ID Token.
 
 
 * Format serialization : JWT
