@@ -115,7 +115,7 @@ EdDSA
 RSA	
 * PKCS1-v1_5 RS256        Optional.
 
-The implementation of the P-256 curve is required.
+Implementations MUST support the P-256 curve with ES256 signature scheme as [RFC7518](https://www.rfc-editor.org/rfc/rfc7518).
 
 
 ## Verifiable Credentials 
