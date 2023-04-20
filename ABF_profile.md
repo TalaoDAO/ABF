@@ -25,6 +25,10 @@ This document is not a specification, but a profile. It outlines existing specif
         * [Legal Entities](legal-entities)  
         * [Cryptographic Keys and Signatures](#cryptographic-keys-and-signatures)
 - [Verifiable Credentials](#verifiable-credentials)
+        * [General Topics](#general-topics)
+        * [Bearer Credentials](#bearer-credentials)
+        * [Credential Header](#credential-header)   
+        * [Credential Payload](#credential-payload)
 - [Protocols](#protocols)
 - [Wallet](#wallet)
 - [Verifiable Data Registries](#verifiable-data-registries)
@@ -142,12 +146,14 @@ Verifiable credentials that are bearer credentials are made possible by not spec
 The header part has three mandatory fields:
 
 * "typ" which is the type of the format (always "JWT")
-
 * "alg" which is the signature scheme employed ('ES256K', 'RS256', 'secp256k1',... ). A list of defined "alg" values can be found in the [RFC7518](https://www.rfc-editor.org/rfc/rfc7518#page-6).
+* "kid" which is the id of the public key. This parameter indicates which key was used to secure (digitally sign) the JWT. In Alastria, the value of the “kid” is the DID reference of the public key as it appears in the DID Document associated to the issuer of the Credential (or wallet holder for presentation). So it always should follow the pattern: did + "#" + key alias (DID absolute URL).  
 
-* "kid" which is the id of the public key. This parameter indicates which key was used to secure (digitally sign) the JWT. In Alastria, the value of the “kid” is the DID reference of the public key as it appears in the DID Document associated to the issuer of the Credential (or wallet for presentation). So it always should follow the pattern: did + "#" + key alias
+Alastria compliance : only P-256 ES256K supported (To be verified???).  
 
-Alastria compliance : only P-256 ES256K supported (To be verified)
+### Credential Payload
+
+cf https://www.rfc-editor.org/rfc/rfc7518#page-6 pour voir ce que l'on garde et la compliance EBSI
 
 
 ## Protocols
