@@ -93,7 +93,7 @@ Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foun
 
 Each memeber is responsible for its own registration with EBSI or ALASTRIA ecosystem.
 
-For companies that do not have their own decentralized identifiers, a quick and simple method is possible through the did:web method. The target system of the Web DID method is the domain name when the domain specified by the DID is resolved through the Domain Name System (DNS). Thankd to that method onen ca setup a DID for a company in less than one hour with a text editor an a server access to the root of the domain. Example of a did-web DID Document for [did:web:talao.co](https://dev.uniresolver.io/1.0/identifiers/did:web:talao.co).  
+For companies that do not have their own decentralized identifiers, a quick and simple method is possible through the did:web method. The target system of the Web DID method is the domain name when the domain specified by the DID is resolved through the Domain Name System (DNS). Thanks to that method one can setup a comany DID with multiple cryptographic keys in less than one hour with just a text editor an a server access to the root of the domain. Here an example of a DID Document for [did:web:talao.co](https://dev.uniresolver.io/1.0/identifiers/did:web:talao.co).  
 
 X509 certificates are NOT supported.
 
