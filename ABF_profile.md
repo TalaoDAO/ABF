@@ -9,7 +9,7 @@ This document is not a specification, but a profile. It outlines existing specif
 
 ## Editors and contributors
 * Thierry Thevenet (Talao)
-* ?
+* Christophe Gervais (Agdatahub)
 * ?
 * ?
         
@@ -37,8 +37,28 @@ This document is not a specification, but a profile. It outlines existing specif
 
 ## Use cases
 
-### legal entity
-* To be done (company consent ?)
+### Legal Entity and Consent Management
+The future European data regulation (Data Governance Act and Data Act) should make it possible to free up data for use, but with rules that are intended to be fair, practical and clear. These rules will simply determine who can access and use what data, for what purpose and for how long. This regulation therefore imposes the obligation of consent before any data exchange. 
+Like any economic sector, the agricultural community will be subject to these rules, which will help to re-create trust and control the use of agricultural data. 
+
+In order to enforce the obligation of consent before any data exchange, a Consent Management System (CMS) has been developed by the company Agdatahub. This principle of consent is based on the digital identity of the farm, user of the data, and the digital identity of the organizations consuming these data (the data recipients). It is indeed a question of guaranteeing the identity of the various actors in order to establish trust, and then to establish a contract, the consent, between these actors. The agricultural digital identity is issued from a regalian data source, in order to reinforce confidence in the uses of this identity: le Registre National des Entreprises (RNE). It consists of 3 verifiable credentials, built from the RNE data:
+* The identity of the farm, an legal entity; 
+* The identity of a natural person, the farmer, manager or partner in the farm;
+* The role of the natural person within the farm: this verifiable credential allows the definition of the rights of use of the legal person identity, such as whether or not to issue a consent on behalf of the farm.
+
+In order to take into account the specific needs of the agricultural profession, functionalities for delegating the use of the legal entity identity have also been added for the management of this identity:
+* Internal delegation: this involves delegating the use of the legal entity identity to an employee of the farm so that this employee can use the farm's identity to validate a request for consent to exchange data; 
+* External delegation: many farms, especially in the livestock sector, subcontract the administrative management of the farm to service companies. It is therefore a question of being able to delegate the use of the digital identity of the farm to an employee of an external company, who will be able to use the identity in order to validate requests for consent and manage them. 
+
+Regarding consents, they are also managed in the form of verifiable credentials: 
+1.	In order to be able to collect a type of data from a farm for a given use, the data recipient makes a request for consent, specifying the type of data, the use of this data and the period of validity of the requested consent ; 
+2.	This request is sent in the form of a QR code to a farmer, who with the help of his mobile Wallet (containing his identity as a physical person as well as his role within the farm) scans this QR code to visualize the request; 
+3.	If the request is validated, then the farmer, via his wallet, asks the farm's wallet to issue a consent to the requesting beneficiary; 
+4.	The consent is then issued as a verifiable credential and is stored in the beneficiary's wallet.
+
+When the beneficiary initiates a data exchange to collect farm's data via a data exchange platform, the platform queries the beneficiary company's wallet to verify that it has consent to access that farm's data.
+
+
 ### IOT 
 * To be done
 ### Web3
